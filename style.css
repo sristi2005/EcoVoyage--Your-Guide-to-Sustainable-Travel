@@ -1,0 +1,99 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #ff0066;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff99cc;
+}
+
+h1, h2, h3 {
+    margin-top: 40px;
+    color: #ff0066;
+}
+
+section {
+    padding: 40px;
+}
+
+footer {
+    background-color: #ff0066;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-column {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.footer-column h3 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Destination Details Section */
+#paris, #nevada {
+    margin-top: 60px;
+}
+
+/* Social Media Icons */
+.footer-column a {
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.footer-column a:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    .footer-section {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-column:last-child {
+        margin-bottom: 0;
+    }
+}
